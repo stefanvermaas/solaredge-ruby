@@ -41,9 +41,8 @@ module Solaredge
 
     def build_resource_url(path, params = {})
       api_key = Solaredge.config.api_key
-      response_format = Solaredge.config.response_format
 
-      URI("#{api_endpoint}/#{path}.#{response_format}").tap do |url|
+      URI("#{api_endpoint}/#{path}.json").tap do |url|
         url.query = URI.encode_www_form(params.merge(api_key: api_key))
       end
     end
