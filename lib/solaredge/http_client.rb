@@ -19,7 +19,7 @@ module Solaredge
     # @param path [String] The path to the requested resource
     # @param params [Hash] A hash with additional parameters for the requested resource.
     # @return [String] the response from the API
-    def request(path:, params: {})
+    def request(path, params: {})
       raise MissingApiKey if Solaredge.config.api_key.empty?
 
       # Build the full resource url based on the given path and the optional params.
