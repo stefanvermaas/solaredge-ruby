@@ -6,24 +6,8 @@ module Solaredge
     # @return [String] The API key for accessing the Solaredge API
     attr_accessor :api_key
 
-    # The `response_format` enables API consumers to define a custom response format.
-    # @return [Symbol] The response format for the API response.
-    AVAILABLE_RESPONSE_FORMATS = %i[json xml csv].freeze
-    attr_reader :response_format
-
     def initialize
       @api_key = ""
-      @response_format = :json
-    end
-
-    # The `response_format=` allows overwriting the response format for all API calls.
-    # @param format [String, Symbol] The new response format
-    # @return [Symbol] The response format
-    def response_format=(format)
-      new_response_format = format.downcase.to_sym
-      raise InvalidResponseFormat, new_response_format unless AVAILABLE_RESPONSE_FORMATS.include?(new_response_format)
-
-      @response_format = new_response_format
     end
   end
 
