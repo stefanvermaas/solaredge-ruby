@@ -23,17 +23,6 @@ module Solaredge
     end
   end
 
-  # The `InvalidResponseFormat` is raised whenever the API consumer requested
-  # a response format which is different from the available response formats.
-  class InvalidResponseFormat < Error
-    def initialize(response_format)
-      super(
-        "[Solaredge] '#{response_format}' is not a valid response format. " \
-          "Please use one of the available response formats (e.g. json, xml or csv)."
-      )
-    end
-  end
-
   # The `MissingApiKey` is raised whenever the API consumer forgot to add the API key.
   class MissingApiKey < Error
     def initialize
