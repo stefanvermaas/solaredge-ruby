@@ -13,3 +13,7 @@ group :development do
   gem "rubocop-minitest", "~> 0.11"
   gem "rubocop-rake", "~> 0.5"
 end
+
+group :test do
+  gem "webmock"
+end
