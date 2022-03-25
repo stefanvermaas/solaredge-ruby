@@ -7,7 +7,7 @@ ruby File.read(".ruby-version").strip
 gemspec
 
 group :development do
-  gem "minitest", "~> 5.0"
+  gem "minitest", "~> 5.15"
   gem "rake", "~> 13.0"
   gem "rubocop", "~> 1.0"
   gem "rubocop-minitest", "~> 0.11"
