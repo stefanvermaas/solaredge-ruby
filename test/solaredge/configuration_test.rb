@@ -14,8 +14,8 @@ describe Solaredge::Configuration do
 
     assert_equal(
       "[Solaredge] The provided configuration object is not a Solaredge::Configuration " \
-        "instance. Please provide a Solaredge::Configuration instance when "  \
-        "overriding the configuration directly.",
+      "instance. Please provide a Solaredge::Configuration instance when "  \
+      "overriding the configuration directly.",
       error_message.to_s
     )
   end
