@@ -9,8 +9,8 @@ module Solaredge
     def initialize
       super(
         "[Solaredge] The provided configuration object is not a " \
-          "Solaredge::Configuration instance. Please provide a "  \
-          "Solaredge::Configuration instance when overriding the configuration directly."
+        "Solaredge::Configuration instance. Please provide a "  \
+        "Solaredge::Configuration instance when overriding the configuration directly."
       )
     end
   end
@@ -28,7 +28,7 @@ module Solaredge
     def initialize
       super(
         "[Solaredge] Missing API key: Please, provide an API key to make requests " \
-          "to the Solaredge Monitoring API."
+        "to the Solaredge Monitoring API."
       )
     end
   end
